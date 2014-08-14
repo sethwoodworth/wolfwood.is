@@ -1,0 +1,16 @@
+---
+- name: update apt cache
+  apt: update_cache=yes
+
+- name: install system packages
+  apt: >
+    name={{item}}
+    state=installed
+  with_items: system_packages
+
+- name: install python packages
+  apt: >
+    name={{item}}
+    state=installed
+  with_items: python_packages
+

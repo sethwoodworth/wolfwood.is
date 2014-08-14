@@ -1,0 +1,14 @@
+---
+system_packages:
+  - fail2ban
+  - vim-nox
+  - nginx
+  - build-essential
+  - git
+  - ntp
+python_packages:
+  - python-dev
+  - python-pip
+  - python-virtualenv
+  - python-boto
+

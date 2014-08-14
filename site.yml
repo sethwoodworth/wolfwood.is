@@ -1,0 +1,11 @@
+---
+- name: Provision a server to host wolfwood websites
+  hosts: all
+  sudo: yes
+  vars_files:
+    - vars.yml
+  roles:
+    - common
+    - nginx
+
+
